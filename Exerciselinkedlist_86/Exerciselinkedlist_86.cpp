@@ -29,6 +29,7 @@ void CircularLinkedList::addNode() {
 	//begining of the list
 	string nm;
 	cout << "\nEnter the name :";
+	cin >> nm;
 	newNode->next = LAST;  //3b
 	if (LAST != NULL) 
 		LAST->die = newNode; //4
