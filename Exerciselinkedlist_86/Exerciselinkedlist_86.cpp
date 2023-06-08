@@ -100,7 +100,7 @@ int main() {
 	while (true) {
 		try {
 			cout << "\nMenu" << endl;
-			cout << "1. Add a record to the list" << endl;
+			cout << "1. Add a record to the list" << endl; 
 			cout << "2. Delete a record from the list" << endl;
 			cout << "3. View all the records in the list" << endl;
 			cout << "4. Exit" << endl;
