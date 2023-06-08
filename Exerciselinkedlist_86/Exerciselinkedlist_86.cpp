@@ -20,7 +20,7 @@ public:
 	void addNode();
 	bool search(int rollno, Node** previous, Node** current);
 	bool listEmpty();
-	bool delNode(int rollno);
+	bool delNode();
 	void traverse();
 };
 
@@ -68,7 +68,7 @@ bool CircularLinkedList::search(int rollno, Node** previous, Node** current) {
 bool CircularLinkedList::listEmpty() {
 	return LAST == NULL;
 }
-bool CircularLinkedList::delNode(int rollno) { 
+bool CircularLinkedList::delNode() { 
 	Node* die, * current;
 	die = current = NULL;
 	if (die->next != NULL)
@@ -112,7 +112,7 @@ int main() {
 				obj.addNode();
 			}
 			case '2': {
-				obj.delNode(int rollno);
+				obj.delNode();
 			}
 			case '3': {
 				obj.traverse();
