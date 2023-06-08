@@ -27,6 +27,8 @@ public:
 void CircularLinkedList::addNode() { 
 	Node* newNode = new Node();	//1 Alllocate the new node
 	//begining of the list
+	string nm;
+	cout << "\nEnter the name :";
 	newNode->next = LAST; 
 	if (LAST != NULL)
 		LAST->die = newNode;
